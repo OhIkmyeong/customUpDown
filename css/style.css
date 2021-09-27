@@ -1,0 +1,61 @@
+@charset "utf-8";
+*{margin:0;padding:0;box-sizing:border-box}
+li{list-style-type:none;}
+button{font-family:inherit;font-size:inherit;}
+
+html,body{
+    display:flex;flex-flow:column nowrap;
+    justify-content:center;
+    align-items:center;
+    width:100%;min-height:100vh;
+    background:#ccc;}
+
+.dom{
+    position:relative;
+    width:100%;max-width:400px;
+    margin:1rem auto; padding:2rem; padding-top:0;
+    border:1px solid #d2d2d2;
+    background:whitesmoke;}
+
+.btns__dom{
+    display:flex;flex-flow:row wrap;
+    justify-content:center;align-items:center;
+    position:relative;
+    width:100%;    
+    padding:1em;}
+
+.btns__dom button{
+    display:block;
+    padding:.5em 2em; margin:5px;
+    background:rgb(33, 26, 92);
+    border:none;
+    color:whitesmoke;
+    cursor:pointer;}
+
+    .btns__dom button:hover{filter:brightness(200%);}
+
+.btns__dom button span{pointer-events:none;}
+
+.ul__dom{
+    position:relative; overflow-y:auto;
+    width:100%;aspect-ratio:1/2;
+    background:#eee;
+    border:1px solid #d2d2d2;}
+
+    .ul__dom li{
+        position:relative;
+        width:100%;
+        padding:2em 1em;
+        background:white;
+        border-bottom:1px solid #d2d2d2;
+        cursor:pointer;}
+
+    /* 선택시 */
+    .ul__dom li.on{
+        background:cornflowerblue;
+        font-weight:bold;color:whitesmoke;
+        box-shadow:inset .5rem .5rem 1rem rgba(53, 56, 233, 0.5);}
+
+.ul__dom li .txt{
+    position:relative;
+    pointer-events:none;}
